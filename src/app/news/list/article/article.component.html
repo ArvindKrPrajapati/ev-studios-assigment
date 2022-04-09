@@ -1,0 +1,39 @@
+<main class="article mat-elevation-z1">
+   <div class="cover">
+    <img [src]="article.images.main"  class="img" alt="">
+    <h3>{{article.name.first +" "+article.name.middle+" "+article.name.last}}</h3>  
+</div>
+<table width="100%">
+  <tr>
+      <td width="100px">Gender</td>
+      <td>:</td>
+      <td>{{article.gender}}<td>
+  </tr>
+
+
+<tr>
+    <td width="100px">Species</td>
+    <td>:</td>
+    <td>{{article.species}}<td>
+</tr>
+
+<tr>
+    <td width="100px">Home Planet</td>
+    <td>:</td>
+    <td>{{article.homePlanet}}<td>
+</tr>
+ <tr>
+    <td width="100px">occupation</td>
+    <td>:</td>
+    <td>{{article.occupation}}<td>
+</tr>
+<tr>
+    <td width="100px">Age</td>
+    <td>:</td>
+    <td>{{article.age}}<td>
+</tr>
+</table>
+ <div class="flex-end">
+<a mat-button (click)="openDialog()" class="sayings">Sayings</a>
+ </div>
+</main>

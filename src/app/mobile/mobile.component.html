@@ -1,0 +1,25 @@
+<main class="mobile">
+    <div class="form-div d-flex">
+        <div class="mat-elevation-z1 form">
+            <label for="first">First Name</label>
+             <input type="text"  id="first" [(ngModel)]="first">
+
+             <label for="last">Last Name</label>
+             <input type="text"  id="last" [(ngModel)]="last">
+            
+             <label for="file">Profile Photo</label>
+             <input type="file" (change)="displayImg($event)">
+        </div>
+    </div>
+
+    <div class="smartphone">
+        <div class="content d-flex">
+            <div class="card mat-elevation-z1 d-flex">
+               <div>
+                <img [src]="imgsrc" alt="" accept="image/*">
+                <h3>{{first+" "+last}}</h3>
+               </div>
+            </div>
+        </div>
+      </div>
+</main>

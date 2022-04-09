@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>{{article.name.first +" "+article.name.middle+" "+article.name.last}} 's Sayings</h2>
+<mat-dialog-content class="mat-typography">
+   <ul>
+       <li *ngFor="let s of article.sayings">{{s}}</li>
+   </ul>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
