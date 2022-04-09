@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
+
+## how to run this project
+ pull this code, get inside project folder run command "npm i" and after that "ng s -o"
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
